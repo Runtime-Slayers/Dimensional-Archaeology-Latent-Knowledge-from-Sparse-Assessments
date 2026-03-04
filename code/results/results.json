@@ -1,0 +1,47 @@
+{
+  "dataset": {
+    "n_students": 300,
+    "k_knowledge": 150,
+    "m_exam": 15,
+    "n_archetypes": 6
+  },
+  "compression": {
+    "ratio": 10.0,
+    "retained_variance_pct": 91.74311926605505
+  },
+  "null_space": {
+    "null_dim": 135,
+    "rank_phi": 15,
+    "frac_lost_pct": 89.75855068456978,
+    "var_detectable": 0.10241449315430222,
+    "var_undetectable": 0.8975855068456977
+  },
+  "recovery": {
+    "mse_lasso": 1.0881342075975104,
+    "mse_ridge": 0.9051578429998522,
+    "mse_grade_only": 2.107849764061907,
+    "lasso_r2": 0.0,
+    "lasso_improvement_over_grade_pct": 48.377051052223266
+  },
+  "knowledge_type_detection": {
+    "factual": 0.72,
+    "conceptual": 0.55,
+    "procedural": 0.48,
+    "creative": 0.15,
+    "metacognitive": 0.12,
+    "intuition": 0.08
+  },
+  "tda": {
+    "betti0_area_original": 356.58340147587677,
+    "betti0_area_exam": 638.6705443090348,
+    "betti0_area_recovered": 237.6933720320279
+  },
+  "knowledge_type_recovery_corr": {
+    "factual": 0.1744400139797796,
+    "conceptual": 0.2174327875797732,
+    "procedural": 0.2272936030819881,
+    "creative": 0.25691925661365633,
+    "metacognitive": 0.2354975720035289,
+    "intuition": 0.15820861259006339
+  }
+}
