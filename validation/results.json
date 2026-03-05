@@ -1,0 +1,61 @@
+{
+  "dataset": "UCI Student Performance (Cortez & Silva, 2008)",
+  "n_students": 395,
+  "m_exam_features": 15,
+  "pca": {
+    "k_for_80pct_var": 8,
+    "k_for_90pct_var": 11,
+    "k_for_95pct_var": 12,
+    "pc1_var": 0.2229,
+    "pc12_cumvar": 0.3623,
+    "real_compression_ratio": 1.36
+  },
+  "nmf": {
+    "best_k": 2,
+    "scores_per_k": {
+      "2": {
+        "r2": 0.6092,
+        "silhouette": 0.1217
+      },
+      "3": {
+        "r2": 0.6852,
+        "silhouette": 0.0511
+      },
+      "4": {
+        "r2": 0.7449,
+        "silhouette": 0.0487
+      },
+      "5": {
+        "r2": 0.7989,
+        "silhouette": 0.0687
+      },
+      "6": {
+        "r2": 0.8445,
+        "silhouette": 0.0574
+      },
+      "7": {
+        "r2": 0.8795,
+        "silhouette": 0.0505
+      },
+      "8": {
+        "r2": 0.9075,
+        "silhouette": 0.0077
+      }
+    }
+  },
+  "lasso": {
+    "r2": 0.8344,
+    "n_nonzero_features": 9,
+    "sparsity": 0.3571,
+    "alpha_optimal": 0.07235
+  },
+  "p8_sim_reference": {
+    "k_knowledge": 150,
+    "m_exam": 15,
+    "n_students": 300,
+    "n_archetypes": 6,
+    "compression_ratio": 10.0,
+    "reconstruction_r2": 0.72,
+    "retained_variance": 0.91
+  }
+}
