@@ -9,21 +9,31 @@ This repository implements the research pipeline for the **REPORT P8: Dimensiona
 
 ## 📊 Pipeline Architecture
 
-The flowchart below visualizes the code structure and processing sequence implemented in this project:
+The flowchart below visualizes the methodology, code modules, and logical execution sequence of the project:
 
 ```mermaid
 graph TD
     subgraph "Phase 1: Environment & System Setup"
-        N0["Vietoris Rips Betti"]
+        N0["Ingest & Parse: Dimensional Archaeology — Recovering Hidden Knowledge from Compressed Exam Spaces"]
+        N1["· Introduction"]
     end
-    subgraph "Phase 2: Signal / Data Processing"
-        N1["Find"]
+    subgraph "Phase 2: Signal & Core Processing"
+        N2["· Methods"]
+        N3["Data Generation"]
     end
-    subgraph "Phase 3: Optimization & Evaluation"
-        N2["Union"]
+    subgraph "Phase 3: Validation & Performance Evaluation"
+        N4["Vietoris Rips Betti"]
+        N5["Find"]
+        N6["Union"]
     end
     N0 --> N1
     N1 --> N2
+    N2 --> N3
+    N3 --> N4
+    N4 --> N5
+    N5 --> N6
+    N1 -->|"Secondary Analysis Path"| N_branchA["Secondary Parallel Process"]
+    N_branchA --> N3
 ```
 
 ---
