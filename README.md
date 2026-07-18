@@ -9,22 +9,21 @@ This repository implements the research pipeline for the **REPORT P8: Dimensiona
 
 ## 📊 Pipeline Architecture
 
-The flowchart below visualizes the methodology and execution sequence implemented in this project:
+The flowchart below visualizes the code structure and processing sequence implemented in this project:
 
 ```mermaid
 graph TD
-    subgraph Data Engineering
-        A["Raw Input Datasets"] --> B["Data Preprocessing & Normalisation"]
-        B --> C["Feature Engineering & Selection"]
+    subgraph "Phase 1: Environment & System Setup"
+        N0["Vietoris Rips Betti"]
     end
-    subgraph Model Architecture
-        C --> D["Multi-Model Comparative Training"]
-        D --> E["Validation via Stratified CV"]
-        E --> F["Hyperparameter Tuning & Threshold Optimization"]
+    subgraph "Phase 2: Signal / Data Processing"
+        N1["Find"]
     end
-    subgraph Inference & Metrics
-        F --> G["Final Classification / Regression Performance Reports"]
+    subgraph "Phase 3: Optimization & Evaluation"
+        N2["Union"]
     end
+    N0 --> N1
+    N1 --> N2
 ```
 
 ---
